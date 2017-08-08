@@ -17,7 +17,9 @@ vim /etc/httpd/conf/httpd.conf
 AddHandler cgi-script .cgi .pl .py
 ```
 修改以上两处
+
 3. 如此可在/var/www/cgi-bin里编写python脚本，在浏览器通过 http://hostname/cgi-bin/yourfile.py来访问
+
 4. python脚本第一行需要增加执行程序
 ```
 #! /usr/bin/env python
