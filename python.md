@@ -22,7 +22,7 @@ AddHandler cgi-script .cgi .pl .py
 ```
 #! /usr/bin/env python
 ```
-5. 第一行要输出文件头部
+5. 第一行要输出文件头部（且以换行结束）
 ```
 print("Content-type:text/html\r\n")
 ```
