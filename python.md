@@ -3,7 +3,7 @@
 ```
 yum install httpd
 ```
-2. 修改配置文件
+2. 修改配置文件修改以下两处
 ```
 vim /etc/httpd/conf/httpd.conf
 ```
@@ -16,9 +16,7 @@ vim /etc/httpd/conf/httpd.conf
 </Directory>
 AddHandler cgi-script .cgi .pl .py
 ```
-修改以上两处
-
-3. 如此可在/var/www/cgi-bin里编写python脚本，在浏览器通过 http://hostname/cgi-bin/yourfile.py来访问
+3. 如此可在/var/www/cgi-bin里编写python脚本，在浏览器通过 *http://hostname/cgi-bin/yourfile.py* 来访问
 
 4. python脚本第一行需要增加执行程序
 ```
