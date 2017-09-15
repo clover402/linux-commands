@@ -37,3 +37,9 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 2. Bracket Highlighter  高亮显示括号、引号、标签
 3. phpcs 支持php语法
 4. SublimeLinter 高亮显示不规范的错误的写法
+
+## 安装配置ctags插件
+1. 下载ctags程序，[http://prdownloads.sourceforge.net/ctags/ctags58.zip](下载地址)
+2. 安装ctags插件
+3. 配置路径，首选项-》插件管理-》ctags  复制default的配置内容到user，修改commands后面的路径为ctags.exe的完整路径（路径最好不含中文）
+4. 配置快捷键，首选项-》插件管理-》ctags 复制default的内容到user，修改为你喜欢的快捷键
