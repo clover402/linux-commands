@@ -30,3 +30,10 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 }
 ```
 3. 如此之后可直接在编辑器界面按快捷键执行python脚本
+
+
+## 常用插件
+1. Alignment  自动对齐
+2. Bracket Highlighter  高亮显示括号、引号、标签
+3. phpcs 支持php语法
+4. SublimeLinter 高亮显示不规范的错误的写法
