@@ -93,4 +93,7 @@ xdebug.remote_port=9999
 * ctrl+shift+F9 开始调试
 * ctrl+F8 断点设置
 * ctrl+shift+F10 结束调试
-
+* ctrl+shift+F5 到下一个断点
+* Ctrl+Shift+F6: 单步
+* Ctrl+Shift+F7: 步入
+* Ctrl+Shift+F8: 步出
