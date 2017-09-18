@@ -55,6 +55,6 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
     "selector": "source.php"
 }
 ```
-默认保存路径：D:\Sublime Text3\Data\Packages\User\php-sublime.setting
+默认保存路径：D:\Sublime Text3\Data\Packages\User\php.sublime-build
 
 3. php文件可以直接ctrl+b直接运行
