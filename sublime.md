@@ -58,3 +58,37 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 默认保存路径：D:\Sublime Text3\Data\Packages\User\php.sublime-build
 
 3. php文件可以直接ctrl+b直接运行
+
+## sublime+xdubg+chrome[WINDOWS]
+### 安装xdubug
+1. 显示phpinfo的内容，查看源码，复制放到如下地址 https://xdebug.org/wizard.php ,会自动显示对于的xdebug版本
+2. 下载xdebug，放入php的ext文件夹
+3. 修改php.ini配置文件，加入如下内容
+```
+zend_extension = ext\php_xdebug-2.5.4-7.1-vc14-x86_64.dll
+[xdebug]
+xdebug.remote_enable=1
+xdebug.remote_handler=dbgp
+xdebug.remote_host=127.0.0.1
+xdebug.remote_port=9999 
+```
+注意：xdebug端口号要与php-cgi的不同
+4. 重启php-cgi与 nginx
+### chrome浏览器安装插件
+1. 下载xdebug-helper插件并安装
+2. 安装完后设置ide-key：sublime.xdebug
+### sublime安装xdebug client
+1. ctrl+alt+p -> install -> xdebug client
+2. 首选项 -> 插件设置 -> xdebug -> 复制default内容到user
+3. 编辑如下几行
+```
+"url":"http://localhost/", #调试的地址
+"port":9999,
+"ide_key": "sublime.xdebug",
+```
+注意：端口号与php.ini中xdebug设置一致，
+4. 快捷键
+* ctrl+shift+F9 开始调试
+* ctrl+F8 断点设置
+* ctrl+shift+F10 结束调试
+
