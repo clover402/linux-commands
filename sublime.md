@@ -43,3 +43,18 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 2. 安装ctags插件
 3. 配置路径，首选项-》插件管理-》ctags  复制default的配置内容到user，修改commands后面的路径为ctags.exe的完整路径（路径最好不含中文）
 4. 配置快捷键，首选项-》插件管理-》ctags 复制default的内容到user，修改为你喜欢的快捷键
+
+
+## 新建php编译系统
+1. 工具-》编译系统-》新建编译系统
+2. 输入如下内容保存
+```
+{
+    "cmd": ["php", "$file"],
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.php"
+}
+```
+默认保存路径：D:\Sublime Text3\Data\Packages\User\php-sublime.setting
+
+3. php文件可以直接ctrl+b直接运行
