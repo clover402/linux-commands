@@ -73,6 +73,7 @@ xdebug.remote_host=127.0.0.1
 xdebug.remote_port=9999 
 ```
 注意：xdebug端口号要与php-cgi的不同
+
 4. 重启php-cgi与 nginx
 ### chrome浏览器安装插件
 1. 下载xdebug-helper插件并安装
@@ -86,7 +87,8 @@ xdebug.remote_port=9999
 "port":9999,
 "ide_key": "sublime.xdebug",
 ```
-注意：端口号与php.ini中xdebug设置一致，
+注意：端口号与php.ini中xdebug设置一致
+
 4. 快捷键
 * ctrl+shift+F9 开始调试
 * ctrl+F8 断点设置
