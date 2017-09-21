@@ -39,8 +39,8 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
-2. [http://cs.sensiolabs.org/](下载phpcs-fixer) ,把php-cs-fixer.phar 放到你的 php.exe 安装目录
-3. [http://download.pear.php.net/package/PHP_CodeSniffer-1.5.0RC4.tgz/](下载php CodeSniffer)
+2. [下载phpcs-fixer](http://cs.sensiolabs.org/),把php-cs-fixer.phar 放到你的 php.exe 安装目录
+3. [下载php CodeSniffer](http://download.pear.php.net/package/PHP_CodeSniffer-1.5.0RC4.tgz/)
 4. 修改sublime phpcs配置文件，设置如下
 ```
 // This is needed as we cannot run phars on windows, so we run it through php
@@ -57,7 +57,7 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 ```
 
 ## 安装配置ctags插件
-1. 下载ctags程序，[http://prdownloads.sourceforge.net/ctags/ctags58.zip](下载地址)
+1. 下载ctags程序，[下载地址](http://prdownloads.sourceforge.net/ctags/ctags58.zip)
 2. 安装ctags插件
 3. 配置路径，首选项-》插件管理-》ctags  复制default的配置内容到user，修改commands后面的路径为ctags.exe的完整路径（路径最好不含中文）
 4. 配置快捷键，首选项-》插件管理-》ctags 复制default的内容到user，修改为你喜欢的快捷键
