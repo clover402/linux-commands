@@ -40,7 +40,7 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
 2. [http://cs.sensiolabs.org/](下载phpcs-fixer) ,把php-cs-fixer.phar 放到你的 php.exe 安装目录
-3. [http://download.pear.php.net/package/PHP_CodeSniffer-1.5.0RC4.tgz](下载php CodeSniffer)
+3. [http://download.pear.php.net/package/PHP_CodeSniffer-1.5.0RC4.tgz/](下载php CodeSniffer)
 4. 修改sublime phpcs配置文件，设置如下
 ```
 // This is needed as we cannot run phars on windows, so we run it through php
