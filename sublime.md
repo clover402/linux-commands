@@ -57,7 +57,9 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 "phpcs_php_path": "D:\\path\\to\\php\\php.exe",
 ```
 5. 如出现"UnicodeDecodeError: 'utf-8' codec can't decode..."错误，可以用packageResourceViewer打开phpcs.py,修改179行return data.decode()
-为return data.decode('UTF-8', 'ignore')
+为return data.decode('gbk')
+6. 如还无法使用可以打印data.decode('gbk')查看具体错误。我出现了@php_bin@不是内部变量，追踪代码发现是phpcs.bat写得有问题，修改所有的环境变量
+@php_bin@,@php_dir@,@bin_dir@为真实内容即可
 
 ## 安装配置ctags插件
 1. 下载ctags程序，[下载地址](http://prdownloads.sourceforge.net/ctags/ctags58.zip)
