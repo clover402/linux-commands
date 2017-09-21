@@ -35,8 +35,26 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 ## 常用插件
 1. Alignment  自动对齐
 2. Bracket Highlighter  高亮显示括号、引号、标签
-3. phpcs 支持php语法
-4. SublimeLinter 高亮显示不规范的错误的写法
+3. SublimeLinter 高亮显示不规范的错误的写法
+
+## 安装phpcs
+1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
+2. [http://cs.sensiolabs.org/](下载phpcs-fixer) ,把php-cs-fixer.phar 放到你的 php.exe 安装目录
+3. [http://download.pear.php.net/package/PHP_CodeSniffer-1.5.0RC4.tgz](下载php CodeSniffer)
+4. 修改sublime phpcs配置文件，设置如下
+```
+// This is needed as we cannot run phars on windows, so we run it through php
+"phpcs_php_prefix_path": "D:\\path\\to\\php\\php.exe",
+
+// This is the path to the bat file when we installed PHP_CodeSniffer
+"phpcs_executable_path": "D:\\path\\to\\phpCodeSniffer\\phpcs.bat",
+
+// The fixer phar file is stored here:
+"php_cs_fixer_executable_path": "D:\\path\\to\\phpcs-fixer\\php-cs-fixer.phar",
+
+// Path to php
+"phpcs_php_path": "D:\\path\\to\\php\\php.exe",
+```
 
 ## 安装配置ctags插件
 1. 下载ctags程序，[http://prdownloads.sourceforge.net/ctags/ctags58.zip](下载地址)
