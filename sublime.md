@@ -97,3 +97,11 @@ xdebug.remote_port=9999
 * Ctrl+Shift+F6: 单步
 * Ctrl+Shift+F7: 步入
 * Ctrl+Shift+F8: 步出
+
+### curl命令调试
+1. windows环境需要安装curl命令
+2. 对于api调试可以在chrome浏览器中打开开发者工具，查看网络，选中右键，copy，copy as curl（bash），如果cookie中没有XDEBUG_SESSION=sublime.xdebug，还需要补充上。sublime中crtl+shift+F9开启xdebug调试，在命令行中运行即可开始调试
+3. 也可以直接用curl命令进行调试
+```
+curl -b XDEBUG_SESSION=sublime.xdebug -X POST -d 'a1=xxx&a2=xxx' -m 300 url_to_debug
+```
