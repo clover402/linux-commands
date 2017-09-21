@@ -36,6 +36,7 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 1. Alignment  自动对齐
 2. Bracket Highlighter  高亮显示括号、引号、标签
 3. SublimeLinter 高亮显示不规范的错误的写法
+4. PackageResourceViewer 插件源码查看器
 
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
@@ -55,6 +56,8 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 // Path to php
 "phpcs_php_path": "D:\\path\\to\\php\\php.exe",
 ```
+5. 如出现"UnicodeDecodeError: 'utf-8' codec can't decode..."错误，可以用packageResourceViewer打开phpcs.py,修改179行return data.decode()
+为return data.decode('UTF-8', 'ignore')
 
 ## 安装配置ctags插件
 1. 下载ctags程序，[下载地址](http://prdownloads.sourceforge.net/ctags/ctags58.zip)
