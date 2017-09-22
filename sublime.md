@@ -39,6 +39,8 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 4. PackageResourceViewer 插件源码查看器
 5. AdvancedNewFile 可通过命令新建文件
 6. SideBarEnhancements 增强型侧边栏
+7. Clipboard Manager 增强型剪贴板，可访问历史剪贴板记录
+8. TrailingSpaces 多余空格标记，强迫症患者福音
 
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
