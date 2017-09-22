@@ -37,6 +37,8 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 2. Bracket Highlighter  高亮显示括号、引号、标签
 3. SublimeLinter 高亮显示不规范的错误的写法
 4. PackageResourceViewer 插件源码查看器
+5. AdvancedNewFile 可通过命令新建文件
+6. SideBarEnhancements 增强型侧边栏
 
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
