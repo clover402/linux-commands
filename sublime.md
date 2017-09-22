@@ -117,8 +117,8 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 
 3. php文件可以直接ctrl+b直接运行
 
-## xdeubg[WINDOWS]
-### 安装xdubug
+## xdeubg[Windows]
+### 安装xdebug
 1. 显示phpinfo的内容，查看源码，复制放到如下地址 https://xdebug.org/wizard.php ,会自动显示对于的xdebug版本
 2. 下载xdebug，放入php的ext文件夹
 3. 修改php.ini配置文件，加入如下内容
