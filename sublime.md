@@ -18,6 +18,8 @@
     "bold_folder_labels": true,//侧边栏文件夹显示加粗，区别于文件
     "highlight_modified_tabs": true,//高亮未保存文件
     "default_line_ending":"unix",//使用 unix 风格的换行符。
+    "rulers": [80, 100],//列标尺，可以设置多个
+    "caret_style": "phase",//光标闪动更柔和
 }
 ```
 
