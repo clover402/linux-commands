@@ -2,22 +2,22 @@
 ```
 {
     "font_size": 14.0,//默认字体大小
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
-	"draw_white_space": "all",//显示空格
-	"ensure_newline_at_eof_on_save": true,//行尾加空行
-	"default_encoding": "UTF-8",//默认编码
-	"theme": "Soda Dark 3.sublime-theme",//主题风格
-	"trim_trailing_white_space_on_save": true,//保存时删除行尾空格
-	"update_check": false,//升级检测
-	"word_wrap": "auto",//自动换行
-	"translate_tabs_to_spaces":true,//自动转Tab为空格
-	"tab_size":4,//Tab转换的空格数
-	"save_on_focus_lost": true,//失去焦点是自动保存
-	"highlight_line":true,//高亮显示正在编辑的行
-	"fade_fold_buttons":false,//默认显示折叠的小三角
-	"bold_folder_labels": true,//侧边栏文件夹显示加粗，区别于文件
-	"highlight_modified_tabs": true,//高亮未保存文件
-	"default_line_ending":"unix",//使用 unix 风格的换行符。
+    "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+    "draw_white_space": "all",//显示空格
+    "ensure_newline_at_eof_on_save": true,//行尾加空行
+    "default_encoding": "UTF-8",//默认编码
+    "theme": "Soda Dark 3.sublime-theme",//主题风格
+    "trim_trailing_white_space_on_save": true,//保存时删除行尾空格
+    "update_check": false,//升级检测
+    "word_wrap": "auto",//自动换行
+    "translate_tabs_to_spaces":true,//自动转Tab为空格
+    "tab_size":4,//Tab转换的空格数
+    "save_on_focus_lost": true,//失去焦点是自动保存
+    "highlight_line":true,//高亮显示正在编辑的行
+    "fade_fold_buttons":false,//默认显示折叠的小三角
+    "bold_folder_labels": true,//侧边栏文件夹显示加粗，区别于文件
+    "highlight_modified_tabs": true,//高亮未保存文件
+    "default_line_ending":"unix",//使用 unix 风格的换行符。
 }
 ```
 
