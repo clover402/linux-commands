@@ -1,3 +1,36 @@
+## 推荐配置
+```
+{
+    "font_size": 14.0,//默认字体大小
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"draw_white_space": "all",//显示空格
+	"ensure_newline_at_eof_on_save": true,//行尾加空行
+	"default_encoding": "UTF-8",//默认编码
+	"theme": "Soda Dark 3.sublime-theme",//主题风格
+	"trim_trailing_white_space_on_save": true,//保存时删除行尾空格
+	"update_check": false,//升级检测
+	"word_wrap": "auto",//自动换行
+	"translate_tabs_to_spaces":true,//自动转Tab为空格
+	"tab_size":4,//Tab转换的空格数
+	"save_on_focus_lost": true,//失去焦点是自动保存
+	"highlight_line":true,//高亮显示正在编辑的行
+	"fade_fold_buttons":false,//默认显示折叠的小三角
+	"bold_folder_labels": true,//侧边栏文件夹显示加粗，区别于文件
+	"highlight_modified_tabs": true,//高亮未保存文件
+	"default_line_ending":"unix",//使用 unix 风格的换行符。
+}
+```
+
+## 常用插件
+1. Alignment  自动对齐
+2. Bracket Highlighter  高亮显示括号、引号、标签
+3. SublimeLinter 高亮显示不规范的错误的写法
+4. PackageResourceViewer 插件源码查看器
+5. AdvancedNewFile 可通过命令新建文件
+6. SideBarEnhancements 增强型侧边栏
+7. Clipboard Manager 增强型剪贴板，可访问历史剪贴板记录
+8. TrailingSpaces 多余空格标记，强迫症患者福音
+
 ## 安装package controll
 ### 自动安装
 control+`打开控制台输入下面命令
@@ -31,16 +64,6 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 ```
 3. 如此之后可直接在编辑器界面按快捷键执行python脚本
 
-
-## 常用插件
-1. Alignment  自动对齐
-2. Bracket Highlighter  高亮显示括号、引号、标签
-3. SublimeLinter 高亮显示不规范的错误的写法
-4. PackageResourceViewer 插件源码查看器
-5. AdvancedNewFile 可通过命令新建文件
-6. SideBarEnhancements 增强型侧边栏
-7. Clipboard Manager 增强型剪贴板，可访问历史剪贴板记录
-8. TrailingSpaces 多余空格标记，强迫症患者福音
 
 ## 安装phpcs
 1. sublime安装phpcs插件,ctrl+shift+p->install->phpcs
@@ -131,3 +154,4 @@ xdebug.remote_port=9999
 ```
 curl -b XDEBUG_SESSION=sublime.xdebug -X POST -d 'a1=xxx&a2=xxx' -m 300 url_to_debug
 ```
+
