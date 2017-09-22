@@ -86,6 +86,13 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 5. 如出现"UnicodeDecodeError: 'utf-8' codec can't decode..."错误，可以用packageResourceViewer打开phpcs.py,修改183行return data.decode()
 为return data.decode('gbk')
 6. 如还无法使用可以在phpcs.py中打印data.decode('gbk')查看具体错误。我出现了@php_bin@不是内部变量的错误，追踪代码发现是phpcs.bat写得有问题，修改所有的环境变量@php_bin@,@php_dir@,@bin_dir@为真实内容即可
+7. 快捷键设置(命令名规律：插件名_ctrl+shift+p查看的命令名，空格都改为下划线）
+```
+[
+    { "keys": ["ctrl+alt+shift+s"], "command":"phpcs_sniff_this_file"},
+    { "keys": ["ctrl+alt+shift+p"], "command":"phpcs_show_previous_errors"},
+]
+```
 
 ## 安装配置ctags插件
 1. 下载ctags程序，[下载地址](http://prdownloads.sourceforge.net/ctags/ctags58.zip)
